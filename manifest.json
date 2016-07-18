@@ -1,0 +1,40 @@
+{
+  "name": "Delogfuscator",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A extension to automatically deobfuscate Minecraft log files",
+  "homepage_url": "http://github.com/Aaron1011/delogfuscate",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "vendor/jszip.js",
+      "src/bg/background.js"],
+    "persistent": false
+  },
+  "options_page": "src/options_custom/index.html",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "page action demo"
+    //"default_popup": "src/page_action/page_action.html"
+  },
+  "permissions": [
+    "http://*/",
+    "https://*/"
+    //"http://export.mcpbot.bspk.rs/"
+  ]
+  /*"content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]*/
+}
